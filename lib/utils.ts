@@ -3,7 +3,7 @@ import { clsx, type ClassValue } from "clsx"
 import sanitizeHtml from "sanitize-html"
 import { twMerge } from "tailwind-merge"
 
-import { Paths } from "@/lib/pageroutes"
+import { Path } from "@/lib/pageroutes"
 
 export type search = {
   title: string
@@ -45,19 +45,19 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 function isRoute(
-  node: Paths
-): node is Extract<Paths, { href: string; title: string }> {
+  node: Path
+): node is Extract<Path, { href: string; title: string }> {
   return "href" in node && "title" in node
 }
 
 export function helperSearch(
   query: string,
-  node: Paths,
+  node: Path,
   prefix: string,
   currentLevel: number,
   maxLevel?: number
 ) {
-  const res: Paths[] = []
+  const res: Path[] = []
   let parentHas = false
   const lowerQuery = query.toLowerCase()
 

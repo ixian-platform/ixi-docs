@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react"
+import { PropsWithChildren, ReactNode } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { iconMap } from "@/settings/icons"
@@ -6,6 +6,7 @@ import clsx from "clsx"
 
 type CardProps = PropsWithChildren & {
   subtitle?: string
+  header?: ReactNode
   title: string
   description?: string
   href?: string
@@ -26,6 +27,7 @@ export default function Card({
   external = false,
   icon,
   variant = "normal",
+  header,
   children,
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
@@ -54,7 +56,8 @@ export default function Card({
       {IconComponent && (
         <IconComponent className="text-gray-500 dark:text-gray-300" />
       )}
-      <div>
+      {header}
+      <div className="text-left">
         {subtitle && variant === "normal" && (
           <p className="text-xs font-semibold !my-1 text-gray-500 dark:text-gray-400">
             {subtitle}

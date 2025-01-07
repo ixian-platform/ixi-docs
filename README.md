@@ -1,6 +1,7 @@
 # IXI-DOCS
 
 **Ixi Docs** are the official documentation for the Ixian network. The documentation is built using [Next.js](https://nextjs.org/) and documentation starter kit [rubix-documents](https://github.com/rubixvi/rubix-documents) which is a free, open-source documentation template.
+
 ### Development
 
 1. Clone the repository:

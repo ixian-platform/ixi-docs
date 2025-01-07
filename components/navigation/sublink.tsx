@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { usePathname } from "next/navigation"
 import { LuChevronDown, LuChevronRight } from "react-icons/lu"
 
-import { Paths } from "@/lib/pageroutes"
+import { Path } from "@/lib/pageroutes"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -14,13 +14,13 @@ import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
 
 function isRoute(
-  item: Paths
-): item is Extract<Paths, { title: string; href: string }> {
+  item: Path
+): item is Extract<Path, { title: string; href: string }> {
   return "title" in item && "href" in item
 }
 
 export default function SubLink(
-  props: Paths & { level: number; isSheet: boolean }
+  props: Path & { level: number; isSheet: boolean }
 ) {
   const path = usePathname()
   const [isOpen, setIsOpen] = useState(true)

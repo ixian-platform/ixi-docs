@@ -7,11 +7,7 @@ export const gtmconnected = true
 export const sitename = "ixidocs"
 export const description =
   "Ixian documentation. Learn about Ixian and how to get started quickly."
-export const keywords = [
-  "documentation",
-  "Ixian",
-  "open source",
-]
+export const keywords = ["documentation", "Ixian", "open source"]
 export const urlimage = "/images/og-image.png"
 export const imagealt = "Ixian Documentation"
 export const twitterhandle = "@ixian_io"

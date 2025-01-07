@@ -1,14 +1,19 @@
 import { PageRoutes } from "@/lib/pageroutes"
 
-export const Navigations = [
+export interface Navigation {
+  title: string
+  href: string
+  external?: boolean
+}
+
+export const Navigations: Navigation[] = [
   {
-    title: "Docs",
+    title: "Technical Docs",
     href: `/docs${PageRoutes[0].href}`,
   },
   {
-    title: "Website",
-    href: "https://www.ixian.io/#ixian",
-    external: true,
+    title: "API Docs",
+    href: `/docs${PageRoutes[8].href}`,
   },
 ]
 

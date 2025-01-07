@@ -1,0 +1,29 @@
+---
+title: Shutdown
+type: core
+---
+## Shutdown
+Gracefully shuts down the running Ixian executable and closes the program.
+Note: It is not possible to 'revive' the node after this command without access to the remote computer's OS.
+### Method: `shutdown`
+### Input parameters:
+None
+
+### Errors:
+
+| Error | Description |
+| --- | --- |
+| RPC_INTERNAL_ERROR | An unknown error occurred in the node. Please check the node log for details. |
+
+### Output:
+- a JSON object containinly only the string "Node shutdown" as the result.
+
+### Example:
+GET http://localhost:8081/shutdown
+```
+{
+	"result": "Node shutdown",
+	"error": null,
+	"id": null
+}
+```

@@ -1,3 +1,7 @@
 .navbar {
   background: var(--colors-surface-inverse);
+
+  a {
+    color: var(--colors-text-inverse);
+  }
 }

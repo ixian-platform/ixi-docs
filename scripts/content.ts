@@ -9,7 +9,7 @@ import { unified } from "unified"
 import { Node, Parent } from "unist"
 import { visit } from "unist-util-visit"
 
-import { Paths } from "@/lib/pageroutes"
+import { Path } from "@/lib/pageroutes"
 
 const docsDir = path.join(process.cwd(), "contents/docs")
 const outputDir = path.join(process.cwd(), "public", "search-data")
@@ -24,8 +24,8 @@ function isMdxJsxFlowElement(node: Node): node is MdxJsxFlowElement {
 }
 
 function isRoute(
-  node: Paths
-): node is Extract<Paths, { href: string; title: string }> {
+  node: Path
+): node is Extract<Path, { href: string; title: string }> {
   return "href" in node && "title" in node
 }
 
@@ -43,14 +43,14 @@ function createSlug(filePath: string): string {
   }
 }
 
-function findDocumentBySlug(slug: string): Paths | null {
-  function searchDocs(docs: Paths[], currentPath = ""): Paths | null {
+function findDocumentBySlug(slug: string): Path | null {
+  function searchDocs(docs: Path[], currentPath = ""): Path | null {
     for (const doc of docs) {
       if (isRoute(doc)) {
         const fullPath = currentPath + doc.href
         if (fullPath === slug) return doc
         if (doc.items) {
-          const found: Paths | null = searchDocs(doc.items, fullPath)
+          const found: Path | null = searchDocs(doc.items, fullPath)
           if (found) return found
         }
       }
