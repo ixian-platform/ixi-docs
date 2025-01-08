@@ -301,6 +301,92 @@ export const Documents: Path[] = [
     ],
   },
   {
+    spacer: true,
+  },
+  {
+    title: "SDK Demos",
+    href: "/sdk-demos",
+    items: [
+      {
+        title: "Light Wallet",
+        href: "/light-wallet",
+      },
+      {
+        title: "Spixi Bot",
+        href: "/spixi-bot",
+      },
+    ],
+  },
+  {
+    spacer: true,
+  },
+  {
+    title: "Guides",
+    href: "/guides",
+    items: [
+      {
+        title: "Ixian DLT Guides",
+        href: "/ixian-dlt-guides",
+        items: [
+          {
+            title: "DLT Node Data Bootstrap",
+            href: "/dlt-node-data-bootstrap",
+          },
+          {
+            title: "DLT Node Configuration options",
+            href: "/dlt-node-configuration-options",
+          },
+          {
+            title: "DLT Node setup on RedHat/Centos",
+            href: "/dlt-node-setup-on-redhat-centos",
+          },
+          {
+            title: "DLT Node setup on Fedora",
+            href: "/dlt-node-setup-on-fedora",
+          },
+          {
+            title: "DLT Node setup on Ubuntu/Debian",
+            href: "/dlt-node-setup-on-ubuntu-debian",
+          },
+          {
+            title: "DLT Node setup on macOS",
+            href: "/dlt-node-setup-on-macos",
+          },
+          {
+            title: "DLT Node setup on Windows",
+            href: "/dlt-node-setup-on-windows",
+          },
+          {
+            title: "DLT Node setup on Windows (Build from source)",
+            href: "/dlt-node-setup-on-windows-build-from-source",
+          },
+        ],
+      },
+      {
+        title: "Ixian S2 Guides",
+        href: "/ixian-s2-guides",
+        items: [
+          {
+            title: "S2 Node setup on RedHat/Centos",
+            href: "/s2-node-setup-on-redhat-centos",
+          },
+          {
+            title: "S2 Node setup on Ubuntu/Debian",
+            href: "/s2-node-setup-on-ubuntu-debian",
+          },
+          {
+            title: "S2 Node setup on Raspberry Pi",
+            href: "/s2-node-setup-on-raspberry-pi",
+          },
+          {
+            title: "S2 Node setup on Windows",
+            href: "/s2-node-setup-on-windows",
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: "Introduction",
     href: "/introduction",
     heading: "Getting started",

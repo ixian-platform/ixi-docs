@@ -26,25 +26,19 @@ export default function Home() {
           <Card
             title="API Documentation"
             description="Find all the information that is needed for seamless integration with Ixian."
-            href="/docs/tech-docs"
+            href="/docs/api-docs"
             header={<Image src={syncAlt} alt={"sync_alt"} />}
           />
           <Card
             title="SDK Demos"
             description="Learn how to build your next app on Ixian. Browse through our SDK Demos and get up and running with Ixian."
-            href="/docs/skd-demos"
+            href="/docs/sdk-demos"
             header={<Image src={syncAlt} alt={"sync_alt"} />}
           />
           <Card
-            title="Ixian DLT Guides"
+            title="Guides"
             description="Learn how to setup and use  Ixian DLT node  on different operating systems."
-            href="/docs/ixian-dlt-guides"
-            header={<Image src={syncAlt} alt={"sync_alt"} />}
-          />
-          <Card
-            title="Ixian S2 Guides"
-            description="Learn how to setup and use  Ixian S2 node  on different operating systems."
-            href="/docs/ixian-s2-guides"
+            href="/docs/guides"
             header={<Image src={syncAlt} alt={"sync_alt"} />}
           />
         </CardGrid>
