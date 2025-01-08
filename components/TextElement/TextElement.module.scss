@@ -1,0 +1,51 @@
+@use "@/app/styles/typograhphy" as *;
+
+// Display styles
+.display-lg {
+  @include display-lg;
+}
+.display-md {
+  @include display-md;
+}
+
+// Heading styles
+.heading-lg {
+  @include heading-lg;
+}
+.heading-md {
+  @include heading-md;
+}
+.heading-sm {
+  @include heading-sm;
+}
+.heading-xs {
+  @include heading-xs;
+}
+
+// Label styles
+.label-lg {
+  @include label-lg;
+}
+.label-md {
+  @include label-md;
+}
+.label-sm {
+  @include label-sm;
+}
+.label-xs {
+  @include label-xs;
+}
+
+// Body styles
+.body-lg {
+  @include body-lg;
+}
+.body-md {
+  @include body-md;
+}
+.body-sm {
+  @include body-sm;
+}
+.body-xs {
+  @include body-xs;
+}
