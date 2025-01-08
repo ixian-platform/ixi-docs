@@ -208,6 +208,94 @@ export const Documents: Path[] = [
             title: "Count Node Versions",
             href: "/count-node-versions",
           },
+          {
+            title: "Get Balance",
+            href: "/get-balance",
+          },
+          {
+            title: "Get Best Block Hash",
+            href: "/get-best-block-hash",
+          },
+          {
+            title: "Get Block",
+            href: "/get-block",
+          },
+          {
+            title: "Get Block Count",
+            href: "/get-block-count",
+          },
+          {
+            title: "Get Full Block",
+            href: "/get-full-block",
+          },
+          {
+            title: "Get Last Blocks",
+            href: "/get-last-blocks",
+          },
+          {
+            title: "Get Mining Block",
+            href: "/get-mining-block",
+          },
+          {
+            title: "Get Transaction",
+            href: "/get-transaction",
+          },
+          {
+            title: "Get Unspent Transaction Outputs Stats",
+            href: "/get-unspent-transaction-outputs-stats",
+          },
+          {
+            title: "Get Wallet",
+            href: "/get-wallet",
+          },
+          {
+            title: "Get Wallet List",
+            href: "/get-wallet-list",
+          },
+          {
+            title: "Miner Stats",
+            href: "/miner-stats",
+          },
+          {
+            title: "Presence List",
+            href: "/presence-list",
+          },
+          {
+            title: "Rescan Blockchain",
+            href: "/rescan-blockchain",
+          },
+          {
+            title: "Set Block Selection Algorithm",
+            href: "/set-block-selection-algorithm",
+          },
+          {
+            title: "Status",
+            href: "/status",
+          },
+          {
+            title: "Submit Mining Solution",
+            href: "/submit-mining-solution",
+          },
+          {
+            title: "Supply",
+            href: "/supply",
+          },
+          {
+            title: "Transaction List",
+            href: "/transaction-list",
+          },
+          {
+            title: "Unapplied Transaction List",
+            href: "/unapplied-transaction-list",
+          },
+          {
+            title: "Verify Mining Solution",
+            href: "/verify-mining-solution",
+          },
+          {
+            title: "Get Registered Names List",
+            href: "/get-registered-names-list",
+          },
         ],
       },
     ],
