@@ -1,16 +1,23 @@
 import Image from "next/image"
 import syncAlt from "@/public/icons/sync_alt.svg"
+import ixiLogo from "@/public/ixi-logotype.svg"
 
 import CustomCard from "@/components/CustomCard/CustomCard"
+import TextElement from "@/components/TextElement/TextElement"
 
 export default function Home() {
   return (
-    <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-2 py-8">
-      <h1 className="text-4xl font-bold mb-4 sm:text-7xl">IXI DOCS</h1>
-      <p className="max-w-[600px] text-foreground mb-8 sm:text-base">
-        Learn how you can leverage Ixian technology to build enterprise level
-        services.
-      </p>
+    <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-2 py-8 gap-16 max-[425px]:gap-8">
+      <div className="flex flex-col items-center gap-2 max-[425px]:items-start max-[425px]:text-left">
+        <Image src={ixiLogo} alt={"ixian-logo"} className="max-sm:max-w-40" />
+        <TextElement type={"heading-xs"}>
+          Welcome to Ixian Documentation page.
+        </TextElement>
+        <TextElement type={"body-sm"}>
+          Learn how you can leverage Ixian technology to build enterprise level
+          services.
+        </TextElement>
+      </div>
       <div className="homeCardGrid">
         <CustomCard
           title="Technical Documents"

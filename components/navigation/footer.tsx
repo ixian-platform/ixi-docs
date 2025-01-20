@@ -1,39 +1,67 @@
 import Image from "next/image"
 import Link from "next/link"
-import classNames from "classnames"
+import logo from "@/public/logo.svg"
 
-import { Company } from "@/lib/meta"
+import TextElement from "@/components/TextElement/TextElement"
 
 import classes from "./navigation.module.scss"
 
 export function Footer() {
   return (
-    <footer className={classNames("w-full h-16 border-t", classes.navbar)}>
-      <div className="flex flex-wrap items-center justify-center sm:justify-between gap-4 sm:gap-0 w-full h-full px-2 sm:py-0 py-3 sm:px-4 lg:px-8 text-sm text-muted-foreground">
-        <p className="text-center">
-          &copy; {new Date().getFullYear()}{" "}
-          <Link className="font-semibold" href={Company.link}>
-            {Company.name}
-          </Link>
-          .
-        </p>
-        {Company.branding !== false && (
-          <div className="text-center hidden md:block">
-            <Link
-              className="font-semibold"
-              href="https://www.rubixstudios.com.au"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/logo.svg"
-                alt="Rubix Studios Logo"
-                width={30}
-                height={30}
-              />
+    <footer className={classes.footer}>
+      <div className="flex justify-between gap-2 pb-16 max-md:flex-col max-md:pb-5">
+        <div className="flex flex-col gap-2 max-w-sm">
+          <div className="flex gap-1 items-center">
+            <Image src={logo} alt={"logo"} />
+            <TextElement type={"heading-xs"}>ixidocs</TextElement>
+          </div>
+          <div className="flex flex-col">
+            <TextElement type={"label-md"}>
+              The official documentation pages for the Ixian Platform.
+            </TextElement>
+            <TextElement className={classes.grayText} type={"label-md"}>
+              Managed by Ixian.
+            </TextElement>
+          </div>
+        </div>
+        <div className="w-full max-w-44">
+          <TextElement className={classes.grayText} type={"label-sm"}>
+            Links
+          </TextElement>
+          <div className="flex flex-col gap-2 mt-10">
+            <Link href={"/"}>
+              <TextElement type={"label-sm"}>Ixian</TextElement>
+            </Link>
+            <Link href={"/"}>
+              <TextElement type={"label-sm"}>ixiscope</TextElement>
+            </Link>
+            <Link href={"/"}>
+              <TextElement type={"label-sm"}>Downloads</TextElement>
+            </Link>
+            <Link href={"/"}>
+              <TextElement type={"label-sm"}>GitHub</TextElement>
             </Link>
           </div>
-        )}
+        </div>
+      </div>
+      <div className="flex gap-2 justify-between border-t border-gray-600 pt-2 flex-wrap">
+        <TextElement type={"label-sm"}>
+          &copy; Ixian, 2017 - {new Date().getFullYear()}
+        </TextElement>
+        <div className="flex gap-4 max-sm:flex-col">
+          <Link href={"/terms"}>
+            <TextElement type={"label-sm"}>Terms of Use</TextElement>
+          </Link>
+          <Link href={"/terms"}>
+            <TextElement type={"label-sm"}>Privacy Policy</TextElement>
+          </Link>
+          <Link href={"/terms"}>
+            <TextElement type={"label-sm"}>Cookies</TextElement>
+          </Link>
+          <Link href={"/terms"}>
+            <TextElement type={"label-sm"}>MIt License</TextElement>
+          </Link>
+        </div>
       </div>
     </footer>
   )

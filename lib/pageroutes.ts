@@ -49,5 +49,3 @@ function getAllLinks(node: Path): Page[] {
 }
 
 export const PageRoutes = Routes.map((it) => getAllLinks(it)).flat()
-
-console.log(PageRoutes)

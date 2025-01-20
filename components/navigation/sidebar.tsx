@@ -29,7 +29,7 @@ export function SheetLeft() {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden flex">
-          <LuAlignLeft className="!size-6" />
+          <LuAlignLeft className="!size-6 navbarMobileLeftMenu" />
         </Button>
       </SheetTrigger>
       <SheetContent className="flex flex-col gap-4 px-0" side="left">

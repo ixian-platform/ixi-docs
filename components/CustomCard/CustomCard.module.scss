@@ -12,6 +12,10 @@
   align-items: flex-start;
   text-align: left;
 
+  @media (max-width: 768px) {
+    max-width: unset;
+  }
+
   &:hover {
     background: var(--colors-surface-03);
   }
@@ -25,4 +29,8 @@
   display: block;
   width: 100%;
   max-width: 360px;
+
+  @media (max-width: 768px) {
+    max-width: unset;
+  }
 }

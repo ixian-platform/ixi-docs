@@ -4,4 +4,28 @@
   a {
     color: var(--colors-text-inverse);
   }
+
+  input,
+  button {
+    background-color: var(--colors-surface-inverse);
+    border-color: var(--colors-outline-inverse);
+  }
+
+  svg {
+    color: var(--colors-icon-inverse);
+  }
+
+  * {
+    border-color: var(--colors-outline-inverse);
+  }
+}
+
+.footer {
+  background: var(--colors-surface-inverse);
+  padding: 40px 16px;
+  color: var(--colors-text-inverse);
+
+  .grayText {
+    color: var(--colors-text-inverse-2);
+  }
 }

@@ -15,6 +15,14 @@ export const Navigations: Navigation[] = [
     title: "API Docs",
     href: `/docs${PageRoutes[8].href}`,
   },
+  {
+    title: "Demos",
+    href: `/docs${PageRoutes[72].href}`,
+  },
+  {
+    title: "Guides",
+    href: `/docs${PageRoutes[75].href}`,
+  },
 ]
 
 export const GitHubLink = {

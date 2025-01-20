@@ -17,7 +17,7 @@ export const companylink = "https://www.ixian.io/"
 
 export const branding = true
 export const rightsidebar = true
-export const feedbackedit = true
+export const feedbackedit = false
 export const tableofcontent = true
 export const totopscroll = true
 
