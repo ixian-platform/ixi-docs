@@ -28,7 +28,7 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: var(--colors-surface-01);
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -234,7 +234,6 @@ span.katex-html {
   @apply font-normal;
   @apply tracking-wider;
   @apply font-medium;
-  font-family: var(--font-code) !important;
 }
 
 .CollapsibleContent {

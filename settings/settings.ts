@@ -8,12 +8,9 @@ export const sitename = "ixidocs"
 export const description =
   "Ixian documentation. Learn about Ixian and how to get started quickly."
 export const keywords = ["documentation", "Ixian", "open source"]
-export const urlimage = "/images/og-image.png"
+export const urlimage = "/logo.svg"
 export const imagealt = "Ixian Documentation"
 export const twitterhandle = "@ixian_io"
-
-export const companyname = "Ixian"
-export const companylink = "https://www.ixian.io/"
 
 export const branding = true
 export const rightsidebar = true

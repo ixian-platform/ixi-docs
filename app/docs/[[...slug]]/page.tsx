@@ -1,4 +1,3 @@
-import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { getDocument } from "@/lib/markdown"
@@ -57,7 +56,7 @@ export async function generateMetadata({ params }: PageProps) {
   const pathName = slug.join("/")
   const res = await getDocument(pathName)
 
-  if (!res) return null
+  if (!res) return {}
 
   const { frontmatter, lastUpdated } = res
 

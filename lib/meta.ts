@@ -1,7 +1,4 @@
 import {
-  branding,
-  companylink,
-  companyname,
   description,
   feedbackedit,
   gtm,
@@ -20,12 +17,6 @@ import {
 } from "@/settings/settings"
 
 import { OpenGraph, TwitterCard } from "@/lib/metadata"
-
-export const Company = {
-  name: companyname,
-  link: companylink,
-  branding: branding,
-}
 
 export const Settings = {
   gtm: gtm,

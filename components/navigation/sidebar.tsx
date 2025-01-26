@@ -32,7 +32,7 @@ export function SheetLeft() {
           <LuAlignLeft className="!size-6 navbarMobileLeftMenu" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex flex-col gap-4 px-0" side="left">
+      <SheetContent className="flex flex-col gap-4 px-0 " side="left">
         <DialogTitle className="sr-only">Menu</DialogTitle>
         <SheetHeader>
           <SheetClose className="px-5" asChild>

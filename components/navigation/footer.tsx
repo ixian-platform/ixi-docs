@@ -29,17 +29,17 @@ export function Footer() {
             Links
           </TextElement>
           <div className="flex flex-col gap-2 mt-10">
-            <Link href={"/"}>
+            <Link href={"https://www.ixian.io/"} target={"_blank"}>
               <TextElement type={"label-sm"}>Ixian</TextElement>
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://explorer.ixian.io/"} target={"_blank"}>
               <TextElement type={"label-sm"}>ixiscope</TextElement>
             </Link>
-            <Link href={"/"}>
-              <TextElement type={"label-sm"}>Downloads</TextElement>
-            </Link>
-            <Link href={"/"}>
+            <Link href={"https://github.com/ProjectIxian"} target={"_blank"}>
               <TextElement type={"label-sm"}>GitHub</TextElement>
+            </Link>
+            <Link href={" https://www.spixi.io/"} target={"_blank"}>
+              <TextElement type={"label-sm"}>Spixi</TextElement>
             </Link>
           </div>
         </div>

@@ -118,14 +118,17 @@ export default function Search() {
         }}
       >
         <DialogTrigger asChild>
-          <div className="relative flex-1 max-w-md cursor-pointer">
-            <LuSearch className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-neutral-500 dark:text-neutral-400" />
+          <div className="relative flex-1 max-w-md cursor-pointer text-white">
+            <LuSearch
+              color={"#fbfcfb"}
+              className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4"
+            />
             <Input
-              className="h-9 w-full pl-10 pr-4 rounded-md border bg-muted shadow-sm md:w-full"
-              placeholder="Search documents..."
+              className="h-9 w-full pl-10 pr-4 rounded-md border bg-muted shadow-sm md:w-full placeholder:text-[#7e817f]"
+              placeholder="Search..."
               type="search"
             />
-            <div className="absolute right-2 top-1/2 hidden -translate-y-1/2 items-center gap-0.5 rounded-sm bg-zinc-200 p-1 text-xs font-mono font-medium dark:bg-neutral-700 sm:flex">
+            <div className="absolute right-2 top-1/2 hidden -translate-y-1/2 items-center gap-0.5 rounded-sm  p-1 text-xs text-[#fbfcfb] font-mono font-medium bg-neutral-700 sm:flex">
               <LuCommand className="w-3 h-3" />
               <span>k</span>
             </div>
