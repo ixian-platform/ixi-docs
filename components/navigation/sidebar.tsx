@@ -36,7 +36,7 @@ export function SheetLeft() {
         <DialogTitle className="sr-only">Menu</DialogTitle>
         <SheetHeader>
           <SheetClose className="px-5" asChild>
-            <Logo />
+            <Logo isSidebar />
           </SheetClose>
         </SheetHeader>
         <ScrollArea className="flex flex-col gap-4">

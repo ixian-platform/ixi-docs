@@ -63,7 +63,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="px-5 sm:px-8 h-auto flex-1">{children}</main>
+          <main className="overflow-hidden px-5 sm:px-8 h-auto flex-1">
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

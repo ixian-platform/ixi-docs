@@ -16,6 +16,7 @@ export default function Home() {
           alt={"ixian-logo"}
           height={40}
           className="max-sm:max-w-40 mb-5 hidden dark:block"
+          decoding="async"
         />
         <Image
           src={logotypeMonoLight}
@@ -23,6 +24,7 @@ export default function Home() {
           alt={"ixian-logo"}
           height={40}
           className="max-sm:max-w-40 mb-5 block dark:hidden"
+          decoding="async"
         />
         <TextElement type={"heading-lg"}>
           Welcome to Ixian Documentation page.
