@@ -1,15 +1,18 @@
 import Image from "next/image"
 import logotypeMonoLight from "@/public/ixi-logotype-mono-lm.svg"
 import logotypeMono from "@/public/ixi-logotype-mono.svg"
-import { IoArrowForwardCircleOutline } from "react-icons/io5"
+import {
+  IoArrowForwardCircleOutline,
+  IoDocumentTextOutline,
+} from "react-icons/io5"
 
 import CustomCard from "@/components/CustomCard/CustomCard"
 import TextElement from "@/components/TextElement/TextElement"
 
 export default function Home() {
   return (
-    <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-2 py-8 gap-16 max-[425px]:gap-8">
-      <div className="flex flex-col items-center gap-2 max-[425px]:items-start max-[425px]:text-left">
+    <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-4 py-16 gap-12 max-[425px]:gap-8">
+      <div className="flex flex-col items-center gap-4 max-[425px]:items-start max-[425px]:text-left mb-8">
         <Image
           src={logotypeMono}
           priority
@@ -33,6 +36,16 @@ export default function Home() {
           Learn how you can leverage Ixian technology to build enterprise level
           services.
         </TextElement>
+      </div>
+      <div className="w-full flex items-center justify-center">
+        <CustomCard
+          linkClassName={"whitepaperCardLink"}
+          targetBlank
+          href={"/Ixian_DLT_Whitepaper_v0.9.4_PreRelease.pdf"}
+          title={"Ixian DLT Whitepaper"}
+          description={"Read the Ixian DLT Whitepaper v0.9.4"}
+          icon={<IoDocumentTextOutline size={48} />}
+        />
       </div>
       <div className="homeCardGrid">
         <CustomCard

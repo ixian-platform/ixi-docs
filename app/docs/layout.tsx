@@ -6,7 +6,7 @@ export default function Documents({
   children: React.ReactNode
 }>) {
   return (
-    <div className="overflow-auto flex items-start gap-14">
+    <div className="overflow-auto flex items-start gap-14 pb-8">
       <Sidebar />
       <div className="flex-1 md:flex-[6]">{children}</div>
     </div>

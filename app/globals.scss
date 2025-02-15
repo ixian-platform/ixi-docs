@@ -25,6 +25,7 @@
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
+    --background2: var(--colors-surface-02);
   }
 
   .dark {
@@ -83,8 +84,8 @@
   color: inherit;
 }
 
-.prose
-  :where(ul > li):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+.prose,
+:where(ul > li):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   padding-inline-start: 0;
 }
 
@@ -268,7 +269,7 @@ span.katex-html {
 .homeCardGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 3rem;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -277,4 +278,12 @@ span.katex-html {
 
 .navbarMobileLeftMenu {
   color: var(--colors-icon-inverse);
+}
+
+.whitepaperCardLink {
+  max-width: calc(792px + 48px) !important;
+
+  > section {
+    max-width: calc(792px + 48px) !important;
+  }
 }

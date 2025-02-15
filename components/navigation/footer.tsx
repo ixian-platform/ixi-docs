@@ -16,7 +16,7 @@ export function Footer() {
             <Image src={logo} alt={"logo"} />
             <TextElement type={"heading-xs"}>ixidocs</TextElement>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-2">
             <TextElement type={"label-md"}>
               The official documentation pages for the Ixian Platform.
             </TextElement>
