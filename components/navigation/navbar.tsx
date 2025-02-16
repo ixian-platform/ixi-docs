@@ -17,7 +17,7 @@ export function Navbar() {
   return (
     <nav
       className={classNames(
-        "sticky top-0 z-50 w-full h-16 border-b backdrop-filter backdrop-blur-xl md:px-4 px-2 bgSurfaceInverse",
+        "sticky top-0 z-50 w-full h-16 border-b backdrop-filter backdrop-blur-xl md:px-4 px-2",
         classes.navbar
       )}
     >

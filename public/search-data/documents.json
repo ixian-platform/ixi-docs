@@ -2,8 +2,8 @@
   {
     "slug": "/api-docs",
     "title": "API Documents",
-    "description": "api docs",
-    "content": ""
+    "description": "Discover the API commands available for interacting with the Ixian Core and DLT.",
+    "content": "### What's inside?\n\n* Ixian Core Generic API Commands\n* Ixian DLT Specific API Commands\n"
   },
   {
     "slug": "/api-docs/ixian-core-generic-api-commands/add-transaction",
@@ -386,8 +386,8 @@
   {
     "slug": "/guides",
     "title": "Guides",
-    "description": "Setup and run your own Ixian DLT and Ixian S2 nodes. Learn how to setup and use various Ixian products on different operating systems.",
-    "content": ""
+    "description": "Comprehensive guides to help you navigate and utilize Ixian technologies.",
+    "content": "### What's inside?\n\n* Ixian DLT Guides\n* Ixian S2 Guides\n"
   },
   {
     "slug": "/guides/ixian-dlt-guides/dlt-node-configuration-options",
@@ -476,8 +476,8 @@
   {
     "slug": "/sdk-demos",
     "title": "SDK Demos",
-    "description": "sdk demos",
-    "content": ""
+    "description": "Explore various SDK demos, including wallet and bot implementations.",
+    "content": "### What's inside?\n\n* Light Wallet\n* Spixi Bot\n"
   },
   {
     "slug": "/sdk-demos/light-wallet",
@@ -506,20 +506,14 @@
   {
     "slug": "/tech-docs",
     "title": "Technical Documents",
-    "description": "tech docs",
-    "content": ""
+    "description": "Explore the core technical aspects of the Ixian ecosystem, including cryptographic foundations, data structures, protocols, and more.",
+    "content": "<a href=\"/Ixian_DLT_Whitepaper_v0.9.4_PreRelease.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\n  Read Whitepaper\n</a>\n\n### What's inside?\n\n* Cryptographic Primitives\n* Data Formats\n* IXI Token Details\n* Optional PoW - Mining\n* Programming Objects\n* Ixian Network Protocol\n"
   },
   {
     "slug": "/tech-docs/ixi-token-details",
     "title": "IxiCash Details",
     "description": "",
     "content": "Offering a strong incentive to run Ixian Nodes is essential in maintaining the Ixian network. This incentive arrives in the form of IxiCash, a cryptocurrency designed for micro transactions.\r\nUsing IxiCash you are able to send money to friends and pay for premium content. Whether you are providing tech support, performing a live show and broadcasting it to paying viewers, you can charge a service fee in IxiCash.\n\n## Premine\n\nGenesis block (#1) contains 7 transactions that can be considered as pre-mine:\n\n* transaction to 1AAF8ZagTw6UqiQPUoiKjmoAN45jvR8tdmSmeev4uNzq45QWB for 240000 Ixis, intended for setting up extra 12 initial seed nodes as required - this wallet was used by seed1.ixian.io\n* transaction to 1NpizdRi5rmw586Aw883CoQ7THUT528CU5JGhGomgaG9hC3EF for 20000 Ixis, intended for running an Ixian DLT seed node - this wallet was used by seed2.ixian.io\n* transaction to 1Dp9bEFkymhN8PcN7QBzKCg2buz4njjp4eJeFngh769H4vUWi for 20000 Ixis, intended for running an Ixian DLT seed node - this wallet was used by seed3.ixian.io\n* transaction to 1SWy7jYky8xkuN5dnr3aVMJiNiQVh4GSLggZ9hBD3q7ALVEYY for 20000 Ixis, intended for running an Ixian DLT seed node - this wallet was used by seed4.ixian.io\n* transaction to 1R2WxZ7rmQhMTt5mCFTPhPe9Ltw8pTPY6uTsWHCvVd3GvWupC for 20000 Ixis, intended for running an Ixian DLT seed node - this wallet was used by seed5.ixian.io\n* transaction to 13fiCRZHPqcCFvQvuggKEjDvFsVLmwoavaBw1ng5PdSKvCUGp for 1000000000 Ixis, intended to be used as a reward for developers\n* transaction to 16LUmwUnU9M4Wn92nrvCStj83LDCRwvAaSio6Xtb3yvqqqCCz 1000000000 Ixis, intended to be used by the foundation to further evolve Ixian technology\n\nThe genesis funds or the so called premine amounts to roughly 2 billion IxiCash (2,000,320,000), of which 1 billion is locked as a team reward for a vesting period\r\nof 5 years (20% to be released at the end of each year). The other 1 billion IxiCash is intended for funding further development and all other important activities.\n\n## Total inflation\n\nA hybrid IxiCash distribution model is in place. For initial distribution, mining seems to be the best way for various reasons.\r\nAs more users set up their nodes, the network itself will become more resilient against attackers and increase its capability for handling large numbers of users.\r\nThis means that more users will participate in the distribution of IxiCash as well. After a sufficient amount of IxiCash has been mined, the mining mechanism will be permanently switched off and new currency will only be generated through other means.\n\nThe Ixian economy differs substantially from what we are used to in the crypto space. Most cryptocurrencies out there rely on a capped supply and smaller and smaller\r\nemissions over time to increase value for investors and early adopters, whether it be PoW related with reducing block rewards or PoS. We have decided to start with a minimum\r\nsupply and gradually increase the rate of new IxiCash generated for the first 1802000 blocks (roughly two years), the idea here is to have a more even distribution of IxiCash\r\namong miners/users. On block #105120000 (roughly 100 years), mining will stop and we expect the total supply at that point to be about 21 billion IxiCash. After block #105120000,\r\nthe only way to generate new IxiCash is by running a Master Node, which will inflate the total supply at 36 IXIs per block (or 38 million IXIs per year). By not capping the\r\nsupply after 21 billion IxiCash in circulation, we are trying to compensate for coins that get lost over time (i.e. by users losing their keys, sending to invalid addresses, ...).\n\nFor IxiCash emission charts and other details visit [https://explorer.ixian.io/?p=emissions](https://explorer.ixian.io/?p=emissions).\n\n## Mining only inflation\n\nThe target mining inflation rate is as follows (you must include a 50% target ratio between solved and unsolved blocks when doing inflation calculations. Only every 2nd block should be solved on average):\n\n* starts with 10 IXI and increases by 0.009 IXI with every block until block height #1051200 (roughly 1 year from genesis block). Target mining inflation is 1.2 billion additional IXIs.\n* 4740 IXI per block until block height #1802000.\n* 2304 IXI per block until block height #6307200.\n* 1152 IXI per block until block height #9460800.\n* 576 IXI per block until block height #12614400.\n* 18 IXI per block until block height #105120000.\n\n## Masternode/Signing only inflation\n\nEach masternode that signs a newly generated block receives a portion of the signing reward and a portion of the transaction fees.\r\nSigning reward and transaction fees are split between all signers of the block (up to 1000) equally.\n\nSigning inflation rate is as follows:\n\n* 0.1% per year until block #86400 (blockheight was reached in less than 2 months)\n* 5% per year until block #1802000\n* 576 IXI per block until block #6307200\n* 288 IXI per block until block #9460800\n* 144 IXI per block until block #12614400\n* 72 IXI per block until block #15768000\n* 36 IXI per block after block #15768000\n\nThis effectively means that after a certain period of time, and sufficient amount of IxiCash is generated, the staking reward will be locked. This way we will replenish the supply to compensate for lost coins,\r\nbut not over inflate the circulating supply. By setting the inflation rates at these levels, we are ensuring the long term sustainability of the Ixian platform.\n\n## Transaction Fees\n\nTransaction fees are collected by masternodes when the transaction is added to the block and the block is accepted by the Ixian network.\n\nAt the time of writing minimum transaction fees are set to 0.00005000 IXI per kilobyte of data.\n"
-  },
-  {
-    "slug": "/tech-docs/ixian-dlt-whitepaper",
-    "title": "Ixian DLT Whitepaper",
-    "description": "",
-    "content": "title: Ixian DLT Whitepaper\n"
   },
   {
     "slug": "/tech-docs/ixian-network-protocol",

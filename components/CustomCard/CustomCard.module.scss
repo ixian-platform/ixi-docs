@@ -11,6 +11,7 @@
   gap: 8px;
   align-items: flex-start;
   text-align: left;
+  min-height: 302px;
 
   @media (max-width: 768px) {
     max-width: unset;
@@ -28,7 +29,7 @@
 .link {
   display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: 396px;
 
   @media (max-width: 768px) {
     max-width: unset;
