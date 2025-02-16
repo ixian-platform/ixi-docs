@@ -14,10 +14,6 @@ export const Documents: Path[] = [
         href: "/data-formats",
       },
       {
-        title: "Ixian DLT Whitepaper",
-        href: "/ixian-dlt-whitepaper",
-      },
-      {
         title: "IXI Token Details",
         href: "/ixi-token-details",
       },

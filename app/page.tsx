@@ -1,6 +1,7 @@
 import Image from "next/image"
 import logotypeMonoLight from "@/public/ixi-logotype-mono-lm.svg"
 import logotypeMono from "@/public/ixi-logotype-mono.svg"
+import { whitepaperVersion } from "@/settings/settings"
 import {
   IoArrowForwardCircleOutline,
   IoDocumentTextOutline,
@@ -43,7 +44,7 @@ export default function Home() {
           targetBlank
           href={"/Ixian_DLT_Whitepaper_v0.9.4_PreRelease.pdf"}
           title={"Ixian DLT Whitepaper"}
-          description={"Read the Ixian DLT Whitepaper v0.9.4"}
+          description={`Read the Ixian DLT Whitepaper ${whitepaperVersion}`}
           icon={<IoDocumentTextOutline size={48} />}
         />
       </div>

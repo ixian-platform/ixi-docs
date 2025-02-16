@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from "@/public/logo.svg"
+import { cookies, privacyPolicy, terms } from "@/settings/settings"
 
 import Copyright from "@/components/Copyright/Copyright"
 import TextElement from "@/components/TextElement/TextElement"
@@ -48,17 +49,14 @@ export function Footer() {
       <div className="flex gap-2 justify-between border-t border-gray-600 pt-2 flex-wrap max-sm:flex-col-reverse max-sm:gap-4">
         <Copyright />
         <div className="flex gap-4 max-sm:grid max-sm:grid-cols-2 max-sm:justify-between">
-          <Link href={"/terms"}>
+          <Link href={terms} target={"_blank"}>
             <TextElement type={"label-sm"}>Terms of Use</TextElement>
           </Link>
-          <Link href={"/terms"}>
+          <Link href={privacyPolicy} target={"_blank"}>
             <TextElement type={"label-sm"}>Privacy Policy</TextElement>
           </Link>
-          <Link href={"/terms"}>
+          <Link href={cookies} target={"_blank"}>
             <TextElement type={"label-sm"}>Cookies</TextElement>
-          </Link>
-          <Link href={"/terms"}>
-            <TextElement type={"label-sm"}>MIT License</TextElement>
           </Link>
         </div>
       </div>
