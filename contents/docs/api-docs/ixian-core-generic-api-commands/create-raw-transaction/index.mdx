@@ -18,9 +18,9 @@ Note: If using the `primaryAddress` parameter, the chosen address (public key) m
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
 | to | String | Yes | List of Base58 encoded recipient addresses with their amounts. Amounts are separated by '_' character. Addresses are separated by '-' character (i.e. address1_amount1-address2_amount2) |
-| from | String | No | List of Base58 encoded sending addresses with their amounts. Amounts are separated by '_' character. Addresses are separated by '-' character (i.e. address1_amount1-address2_amount2). All addresses must belong to the same private key. If no from parameter is specified, it will be automatically generated, where the addresses with least IxiCash will be spent first. |
+| from | String | No | List of Base58 encoded sending addresses with their amounts. Amounts are separated by '_' character. Addresses are separated by '-' character (i.e. address1_amount1-address2_amount2). All addresses must belong to the same private key. If no from parameter is specified, it will be automatically generated, where the addresses with least $IXI will be spent first. |
 | primaryAddress | String | No | Specify if the node is using a wallet with multiple keypairs in order to select the keypair (public key) which will be used to sign the transaction. The chosen primary address must be a valid signer for all addresses listed in the `from` field. |
-| fee | Number | No | Transaction fee, specified in IxiCash per kB. If no fee parameter is specified, the default (which is also the minimum) 0.00005 IxiCash per kB will be used. |
+| fee | Number | No | Transaction fee, specified in $IXI per kB. If no fee parameter is specified, the default (which is also the minimum) 0.00005 $IXI per kB will be used. |
 | autofee | Boolean | No | If specified, the system will automatically deduct the required fee from the first address given in `from`. This parameter is not required if you have included the appropriate fees somewhere in the `from` list, or are not specifying the `from` list at all. |
 | wallet | String | No | Base58 Primary Wallet address in case multiple wallets are being used. |
 | json | Boolean | No | If specified, the transaction will be returned as a JSON transaction object and not encoded as a hexstring. |
