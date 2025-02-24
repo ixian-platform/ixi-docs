@@ -37,9 +37,10 @@ export const Settings = {
     title: sitename,
     description: description,
     siteName: sitename,
+    url: url,
     images: [
       {
-        url: urlimage,
+        url: `${url}${urlimage}`,
         width: 1200,
         height: 630,
         alt: imagealt,
@@ -53,7 +54,7 @@ export const Settings = {
     site: twitterhandle,
     images: [
       {
-        url: urlimage,
+        url: `${url}${urlimage}`,
         alt: imagealt,
       },
     ],
