@@ -1,14 +1,25 @@
-export const url = "https://docs.ixian.io/"
+export const url = "https://docs.ixian.io"
 export const siteicon = "/logo.svg"
 
 export const gtm = "GTM-XXXXXXX"
-export const gtmconnected = true
+export const gtmconnected = false
 
-export const sitename = "ixidocs"
+export const sitename = "Ixian Documentation | Build Smarter, Spend Less"
 export const description =
-  "Ixian documentation. Learn about Ixian and how to get started quickly."
-export const keywords = ["documentation", "Ixian", "open source"]
-export const urlimage = "/logo.svg"
+  "Explore guides, API documentation, and setup instructions to integrate with the Ixian network."
+export const keywords = [
+  "documentation",
+  "Ixian",
+  "open source",
+  "ixidocs",
+  "Ixian Whitepaper",
+  "whitepaper",
+  "techical",
+  "API",
+  "SDK",
+  "Guides",
+]
+export const urlimage = "/ixidocs.jpg"
 export const imagealt = "Ixian Documentation"
 export const twitterhandle = "@ixian_io"
 
