@@ -26,5 +26,12 @@ export const Navigations: Navigation[] = [
 ]
 
 export const GitHubLink = {
-  href: "https://github.com/ProjectIxian",
+  href: "https://github.com/ixian-platform",
+}
+
+export const links = {
+  ixian: "https://www.ixian.io/",
+  ixiscope: "https://explorer.ixian.io/",
+  spixi: "https://www.spixi.io/",
+  downloads: "https://www.ixian.io/get-involved#resources",
 }
