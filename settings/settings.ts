@@ -4,7 +4,8 @@ export const siteicon = "/logo.svg"
 export const gtm = "GTM-XXXXXXX"
 export const gtmconnected = false
 
-export const sitename = "Ixian Documentation | Build Smarter, Spend Less"
+export const sitename = "ixidocs"
+export const title = "Ixian Documentation | Build Smarter, Spend Less"
 export const description =
   "Explore guides, API documentation, and setup instructions to integrate with the Ixian network."
 export const keywords = [

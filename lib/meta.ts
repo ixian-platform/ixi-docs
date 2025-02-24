@@ -10,6 +10,7 @@ import {
   siteicon,
   sitename,
   tableofcontent,
+  title,
   totopscroll,
   twitterhandle,
   url,
@@ -27,14 +28,14 @@ export const Settings = {
   totop: totopscroll,
   gitload: loadfromgithub,
 
-  title: sitename,
+  title: title,
   metadataBase: url,
   description: description,
   siteicon: siteicon,
   keywords: keywords,
   openGraph: {
     type: "website",
-    title: sitename,
+    title: title,
     description: description,
     siteName: sitename,
     url: url,
@@ -49,7 +50,7 @@ export const Settings = {
   } as OpenGraph,
   twitter: {
     card: "summary_large_image",
-    title: sitename,
+    title: title,
     description: description,
     site: twitterhandle,
     url: url,
