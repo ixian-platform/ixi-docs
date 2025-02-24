@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from "@/public/logo.svg"
+import { GitHubLink, links } from "@/settings/navigation"
 import { cookies, privacyPolicy, terms } from "@/settings/settings"
 
 import Copyright from "@/components/Copyright/Copyright"
@@ -31,17 +32,20 @@ export function Footer() {
             Links
           </TextElement>
           <div className="flex flex-col gap-2 mt-10 max-sm:mt-4">
-            <Link href={"https://www.ixian.io/"} target={"_blank"}>
+            <Link href={links?.ixian} target={"_blank"}>
               <TextElement type={"label-sm"}>Ixian</TextElement>
             </Link>
-            <Link href={"https://explorer.ixian.io/"} target={"_blank"}>
+            <Link href={links?.ixiscope} target={"_blank"}>
               <TextElement type={"label-sm"}>ixiscope</TextElement>
             </Link>
-            <Link href={"https://github.com/ProjectIxian"} target={"_blank"}>
+            <Link href={GitHubLink?.href} target={"_blank"}>
               <TextElement type={"label-sm"}>GitHub</TextElement>
             </Link>
-            <Link href={" https://www.spixi.io/"} target={"_blank"}>
+            <Link href={links?.spixi} target={"_blank"}>
               <TextElement type={"label-sm"}>Spixi</TextElement>
+            </Link>
+            <Link href={links?.downloads} target={"_blank"}>
+              <TextElement type={"label-sm"}>Downloads</TextElement>
             </Link>
           </div>
         </div>
